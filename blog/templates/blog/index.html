@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <title>جابینا</title>
+
+  <link rel="icon" href="{% static 'img/logo/logo-icon.ico' %}" sizes="any" type="image/svg+xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!--- style -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/flickity.min.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.css' %}" type="text/css" />
+
+  <!--- fontawesome-->
+  <link href="{%static 'fonts/fontawesome/css/fontawesome-all.min.css' %}" rel="stylesheet">
+
+  <!--- IRANSans-->
+  <link href="{% static 'fonts/IRANSans/fontiran.css' %}" rel="stylesheet">
+</head>
+
+<body onLoad="openTab(event, 'IranCell')">
+  <div class="container warp">
+
+    <section class="container-fluid section-header">
+      <div class="container header-content">
+
+        <div class="logo">
+          <a href="#"><img src="{% static 'img/logo/logo.png' %}" alt="logo" /></a>
+        </div>
+
+        <div class="row">
+          <div class="d-lg-none d-md-none d-sm-block  col-12 ">
+            <div class="image-container"><img src="{% static 'img/bg-header.png' %}"></div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="text-container">
+              <small>صفحه فرودی مناسب استخدام کارمند <i class="fas fa-check-circle"></i></small>
+              <h1><span> جابینا </span>صفحه فرودی برای کارفرماها !</h1>
+              <p class="h-title"><span class="tline">با جابینا</span> بهترین صفحه فرود استخدامی را داشته باش ! </p>
+              <a class="bbtn" href="{% url 'profiles' %}">بزن بریم</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 d-md-block d-sm-none d-none">
+            <div class="image-container"><img src="{% static 'img/bg-header.png' %}"></div>
+          </div>
+        </div>
+  </div>
+
+  <section class="container-fluid section-footer">
+    <img id="bg-cover-footer" src="{% static 'img/bg-cover-footer.png' %}">
+    <div class="container footer-content">
+      <strong>میخوای از پیشنهادهای شغلی <span>۵۰۰۰</span> شرکت خبردار بشی ؟</strong>
+      <p>پس همین الان ثبت نام کن و رزومتو بساز !</p>
+      <a class="bbtn" href="{% url 'register' %}">ثبت نام</a>
+      <br>
+      <a class="bbtn" href="{% url 'login' %}">ورود </a>
+
+    </div>
+  </section>
+  <!--container warp -->
+  <div class="bg_dark"></div>
+
+  <!------ js -------->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/template.js"></script>
+
+
+
+
+</body>
+
+</html>
